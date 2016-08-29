@@ -1,0 +1,19 @@
+{
+  "name": "exemplar",
+  "version": "0.0.1",
+  "description": "A quality module! A downright splendid paragon of programming.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerifiedModules/exemplar.git"
+  },
+  "author": "William Hilton <wmhilton@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VerifiedModules/exemplar/issues"
+  },
+  "homepage": "https://github.com/VerifiedModules/exemplar#readme"
+}
