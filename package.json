@@ -4,15 +4,17 @@
   "description": "A quality module! A downright splendid paragon of programming.",
   "main": "index.js",
   "scripts": {
+    "test": "echo Error: no test verification && exit 1",
+    "security:default": "echo Error: no security verification && exit 1",
+    "style:default": "echo Error: no style verification && exit 1",
+    "misc:default": "echo Error: no misc verification && exit 1",
+    "doc:default": "echo Error: no doc verification && exit 1",
     "fix": "npm-run-all fix:*",
-    "v:security": "npm-run-all v:security:**",
-    "v:style": "npm-run-all v:style:**",
-    "v:misc": "npm-run-all v:misc:**",
-    "v:test": "npm-run-all test:**",
-    "v:doc": "npm-run-all v:doc:**",
-    "verify": "npm-run-all v:**",
-    "test": "npm-run-all test:*",
-    "test:default": "echo \"Error: no test specified\" && exit 1"
+    "security": "npm-run-all security:*",
+    "style": "npm-run-all style:*",
+    "misc": "npm-run-all misc:*",
+    "doc": "npm-run-all doc:*",
+    "verify": "npm-run-all test security:* style:* misc:* doc:* --silent --continue-on-error"
   },
   "repository": {
     "type": "git",
