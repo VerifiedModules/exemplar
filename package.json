@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VerifiedModules/exemplar/issues"
   },
-  "homepage": "https://github.com/VerifiedModules/exemplar#readme"
+  "homepage": "https://github.com/VerifiedModules/exemplar#readme",
+  "devDependencies": {
+    "package-json-to-readme": "^1.5.1"
+  }
 }
