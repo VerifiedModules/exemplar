@@ -4,6 +4,7 @@
   "description": "A quality module! A downright splendid paragon of programming.",
   "main": "index.js",
   "scripts": {
+    "retire": "retire",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/VerifiedModules/exemplar/issues"
   },
-  "homepage": "https://github.com/VerifiedModules/exemplar#readme"
+  "homepage": "https://github.com/VerifiedModules/exemplar#readme",
+  "devDependencies": {
+    "retire": "^1.2.3"
+  }
 }
