@@ -4,8 +4,18 @@
   "description": "A quality module! A downright splendid paragon of programming.",
   "main": "index.js",
   "scripts": {
-    "standard": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix:standard": "standard --fix",
+    "style:standard": "standard",
+    "test": "echo Error: no test verification && exit 1",
+    "security:default": "echo Error: no security verification && exit 1",
+    "misc:default": "echo Error: no misc verification && exit 1",
+    "doc:default": "echo Error: no doc verification && exit 1",
+    "fix": "npm-run-all fix:*",
+    "security": "npm-run-all security:*",
+    "style": "npm-run-all style:*",
+    "misc": "npm-run-all misc:*",
+    "doc": "npm-run-all doc:*",
+    "verify": "npm-run-all test security:* style:* misc:* doc:* --silent --continue-on-error"
   },
   "repository": {
     "type": "git",
@@ -18,6 +28,7 @@
   },
   "homepage": "https://github.com/VerifiedModules/exemplar#readme",
   "devDependencies": {
+    "npm-run-all": "^3.0.0",
     "standard": "^8.0.0"
   },
   "standard": {
