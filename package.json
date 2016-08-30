@@ -4,7 +4,15 @@
   "description": "A quality module! A downright splendid paragon of programming.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix": "npm-run-all fix:*",
+    "v:security": "npm-run-all v:security:**",
+    "v:style": "npm-run-all v:style:**",
+    "v:misc": "npm-run-all v:misc:**",
+    "v:test": "npm-run-all test:**",
+    "v:doc": "npm-run-all v:doc:**",
+    "verify": "npm-run-all v:**",
+    "test": "npm-run-all test:*",
+    "test:default": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/VerifiedModules/exemplar/issues"
   },
-  "homepage": "https://github.com/VerifiedModules/exemplar#readme"
+  "homepage": "https://github.com/VerifiedModules/exemplar#readme",
+  "devDependencies": {
+    "npm-run-all": "^3.0.0"
+  }
 }
